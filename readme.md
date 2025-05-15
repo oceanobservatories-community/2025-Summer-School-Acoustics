@@ -1,6 +1,8 @@
 # OOI Summer School on Acoustics
 ![OOI logo](imgs/ooi_logo.png)
 
+> [!WARNING] 👷
+> This repo is under construction. Come back soon!
 <!-- SPHINX-START -->
 
 ## Getting Started
