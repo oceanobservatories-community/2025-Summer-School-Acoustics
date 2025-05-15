@@ -26,3 +26,37 @@ to install the development dependancies, first navigate to the repository (shoul
 
 ```bash
 pip install -e ".[dev]"
+```
+
+## Documentation
+I've (John) set up documentation using sphinx. This allows for any documentation to be written in simple markdown.
+
+### autodoc
+If you add a python function or module in `/src/ooi_2025_summer_school_acoustics`, docstrings can be added. I (John) use the [scipy/numpy](https://numpydoc.readthedocs.io/en/latest/format.html) convention, but am happy to use some other convention if others have a strong opinion. These docstrings will be automatically added to the API documentation. 
+
+
+Here's an example of the scipy/numpy convention
+
+```python
+def csd(data, dim, dB=False, **kwargs):
+    '''
+    Estimate the cross power spectral density, Pxy, using Welch’s method.
+
+    Parameters
+    ----------
+    data : xr.Dataset
+        dataset containing data to estimate cross power spectral density.
+        must only contain two data variables
+    dim : str
+        dimension to calculate PSD over
+    dB : bool
+        if True, return PSD in dB
+    kwargs : hashable
+        passed to scipy.signal.csd
+
+    Returns
+    -------
+    csd : xr.DataArray
+        cross power spectral density
+    '''
+```

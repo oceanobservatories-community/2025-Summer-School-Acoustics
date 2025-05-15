@@ -1,6 +1,7 @@
 # OOI Summer School on Acoustics
 ![OOI logo](imgs/ooi_logo.png)
 
+<!-- SPHINX-START -->
 
 ## Getting Started
 

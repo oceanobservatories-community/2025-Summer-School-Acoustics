@@ -26,11 +26,17 @@ classifiers = [
 dependencies = [
   "numpy",
   "scipy",
+  "xarray",
 ]
 
 [project.optional-dependencies]
 dev = [
   "hatch",
+  "sphinx",
+  "myst_parser",
+  "sphinx-autodoc-typehints",
+  "sphinx-copybutton",
+  "furo"
 ]
 
 [project.urls]
