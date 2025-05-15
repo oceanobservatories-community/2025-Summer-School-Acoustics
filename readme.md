@@ -26,7 +26,13 @@ In the terminal app in jupyter hub create the new conda environment
 conda create --name ooi_acoustics
 ```
 
-Install the Summer School repository as a python package
+Install python (we'll use version 3.12)
+
+```bash
+conda install python
+```
+
+Install the Summer School repository as a python package. This will automatically install all python packages that we'll be using for the summer school.
 
 ```bash
 conda activate ooi_acoustics
