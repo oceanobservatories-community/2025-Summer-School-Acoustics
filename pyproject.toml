@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ooi-2025-summer-school-acoustics"
+dynamic = ["version"]
+description = 'Repository with code and notebooks for the 2025 OOI summer school on acoustics'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+dependencies = [
+  "xarray[complete]",
+]
+
+[project.optional-dependencies]
+dev = [
+  "hatch",
+  "sphinx",
+  "myst_parser",
+  "sphinx-autodoc-typehints",
+  "sphinx-copybutton",
+  "furo"
+]
+
+[project.urls]
+Documentation = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics#readme"
+Issues = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics/issues"
+Source = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics"
+
+[tool.hatch.version]
+path = "src/ooi_2025_summer_school_acoustics/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/ooi_2025_summer_school_acoustics tests}"
+
+[tool.coverage.run]
+source_pkgs = ["ooi_2025_summer_school_acoustics", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/ooi_2025_summer_school_acoustics/__about__.py",
+]
+
+[tool.coverage.paths]
+ooi_2025_summer_school_acoustics = ["src/ooi_2025_summer_school_acoustics", "*/ooi-2025-summer-school-acoustics/src/ooi_2025_summer_school_acoustics"]
+tests = ["tests", "*/ooi-2025-summer-school-acoustics/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
