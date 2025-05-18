@@ -16,6 +16,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
     "sphinx_copybutton",
+    "sphinx.ext.autosummary",
 ]
 
 source_suffix = [".rst", ".md"]
@@ -62,3 +63,9 @@ nitpick_ignore = [
 ]
 
 always_document_param_types = True
+
+add_module_names = False
+
+modindex_common_prefix = ["ooi_2025_summer_school_acoustics."]
+
+autosummary_generate = True

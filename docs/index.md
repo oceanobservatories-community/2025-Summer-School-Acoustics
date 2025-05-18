@@ -5,6 +5,9 @@
 ```{toctree}
 :maxdepth: 2
 :hidden:
+
+modules
+ooi_2025_summer_school_acoustics
 ```
 
 ```{include} ../readme.md

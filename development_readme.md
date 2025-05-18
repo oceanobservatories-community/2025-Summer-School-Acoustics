@@ -31,6 +31,25 @@ pip install -e ".[dev]"
 ## Documentation
 I've (John) set up documentation using sphinx. This allows for any documentation to be written in simple markdown.
 
+### Building documentation
+if you have installed all of the development dependancies (see [above](#pyprojecttoml), you can build the documentation with these commands:
+
+- navigate to the docs/ directory within the repository. Starting from repo root directory
+    ```bash
+    cd docs/
+    ```
+- build the documentation. This executes the commands located within the `makefile`
+    ```bash
+    make
+    ```
+
+**to delete built files:**
+```make clean```
+
+**to just build auto-api source documentation:**
+```make api```
+
+
 ### autodoc
 If you add a python function or module in `/src/ooi_2025_summer_school_acoustics`, docstrings can be added. I (John) use the [scipy/numpy](https://numpydoc.readthedocs.io/en/latest/format.html) convention, but am happy to use some other convention if others have a strong opinion. These docstrings will be automatically added to the API documentation. 
 

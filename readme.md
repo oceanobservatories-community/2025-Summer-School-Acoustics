@@ -14,7 +14,7 @@ For these instructions, we're going to use conda as our package manager. You're 
 
 **create a clone of the summer school repository on jupyter hub**
 in the jupyter hub terminal app, clone the repository. Replace `<git url>` with the git url for your personal forked repo. You can copy the url by clicking the green `<> Code` button on the repo home page.
-<img src="imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
+<img src="/imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
 
 
 ```bash
