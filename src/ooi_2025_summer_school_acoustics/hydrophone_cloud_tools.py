@@ -3,6 +3,9 @@ Tools for openning and manipulating LF hydrophone zarr data
 
 """
 import xarray as xr
+import warnings
+import pandas as pd
+import numpy as np
 
 def open_lf_hydrophones():
     """
@@ -13,25 +16,59 @@ def open_lf_hydrophones():
     ds : xr.Dataset
         xarray dataset of the hydrophone time-series data
     """
-    return
 
-def slice_lf_hydrophones():
-    """
-    slice the low frequency hydrophone zarr dataset to a specific time slice.
+    # temporary dataset path, until data is uploaded to Jupyter Hub
+    dataset_path = '/Volumes/ODL/ODLdata/ooiHydrophones/LFRawData/ooi_lfhydrophones.zarr'
+
+    ds = xr.open_zarr(dataset_path)
+    return ds
+
+def slice_lf_hydrophones(ds, start_time, end_time, include_coord=True, time_base=pd.Timestamp('2015-01-01')):
+    '''
+    slice_lf_hydrophones - slices dataset using time slice and assigns coordinates to time dimension
 
     Parameters
     ----------
+    ds : xarray.dataset
+        dataset to slice
     start_time : pd.Timestamp
-        start time of the slice
+        start time for slice
     end_time : pd.Timestamp
-        end time of the slice
-    include_coords : bool
-        if True, include the coordinates in the slice. Default is False.
+        end time for slice
+    include_coord : bool
+        whether or not to include time coordinate or not (Default is True)
+        - when True, best use would be for slice to be no larger than one month
+    time_base : pd.Timestamp
+        start time of the dataset
+    '''
+
+    ds_sliced = ds.isel({'time':__int_idx(start_time, end_time, time_base=time_base)})
+    if include_coord:
+        if (end_time - start_time) > pd.Timedelta(31, 'd'):
+            warnings.warn('slice is longer than 1 month, include_coord=True might cause memory issues')
+        time_coord = pd.to_datetime(np.arange(start_time.value, end_time.value, int(5e6)))
+        ds_sliced = ds_sliced.assign_coords({'time':time_coord})
+
+    return ds_sliced
+
+def __int_idx(start_date, end_date, time_base=pd.Timestamp('2015-01-01')):
+    '''
+    int_idx - get integer indices for zarr store given date bounds
+
+    Parameters
+    ----------
+    start_date : pd.Timestamp
+        start date for integer slice
+    end_date : pd.Timestamp
+        end date for integer slice
 
     Returns
     -------
-    ds_slice : xr.Dataset
-        xarray dataset of the hydrophone time-series data
-    """
+    idx_slice : slice
+        slice between start_idx and end_idx
+    '''
 
-    return
+    start_idx = int((start_date - time_base).value/1e9*200)
+    end_idx = int((end_date - time_base).value/1e9*200)
+
+    return slice(start_idx,end_idx)
