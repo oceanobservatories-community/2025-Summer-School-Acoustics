@@ -37,6 +37,9 @@ dev = [
   "sphinx-copybutton",
   "furo"
 ]
+arlpy = [
+  "arlpy"
+]
 
 [project.urls]
 Documentation = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics#readme"
