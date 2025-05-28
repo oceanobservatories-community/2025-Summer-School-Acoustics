@@ -7,8 +7,15 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
+  commands:
+    # Install dependencies
+    - pip install -e ".[docs]"
+    # Run api-doc to generate API documentation
+    - sphinx-apidoc -f -o docs/ .
+
 sphinx:
   configuration: docs/conf.py
+  builder: html
 
 python:
   install:
