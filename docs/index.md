@@ -1,21 +1,38 @@
 # OOI 2025 Summer School on Acoustics
 
-![OOI logo](../imgs/ooi_logo.png)
+![OOI logo](../imgs/summer_school_logo.png)
 
-```{toctree}
-:maxdepth: 2
-:hidden:
 
-modules
-ooi_2025_summer_school_acoustics
+```{warning}
+👷 This repo is under construction. Come back soon!
 ```
 
 ```{include} ../readme.md
 :start-after: <!-- SPHINX-START -->
 ```
 
-## Indices and tables
+```{admonition} Start Here
+:class:note
+We've provided a guide for setting up the Jupyter Hub environment and installing all the dependencies that you'll need. See {doc}`getting_started`
+```
 
-- {ref}`genindex`
-- {ref}`modindex`
-- {ref}`search`
+## Resources
+Reading material for the summer school and helpful resources for coding
+
+```{admonition} Google Drive
+:class:note
+Slides and Reading material will be on the [google drive](https://drive.google.com/drive/folders/1mbkL9T2o9P4MHjQIOuxJgNdXby3lGmbm?usp=drive_link)
+```
+
+### python resources
+- [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/index.html)
+- [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/06-files.html)
+- [Project Pythia](https://projectpythia.org/)
+
+
+## Website Contents
+```{toctree}
+:maxdepth: 2
+modules
+getting_started
+```
