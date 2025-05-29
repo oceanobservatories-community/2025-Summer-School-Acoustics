@@ -30,7 +30,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-  "hatch",
+  "hatch"
+]
+
+docs=[
   "sphinx",
   "myst_parser",
   "sphinx-autodoc-typehints",
