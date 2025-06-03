@@ -10,8 +10,6 @@ build:
   commands:
     # Install dependencies
     - pip install -e ".[docs]"
-    # Run api-doc to generate API documentation
-    - sphinx-apidoc -f -o docs/ .
     # Build the documentation
     - sphinx-build -b html docs/ $READTHEDOCS_OUTPUT/html
 

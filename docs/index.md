@@ -12,7 +12,7 @@
 ```
 
 ```{admonition} Start Here
-:class:note
+:class: note
 We've provided a guide for setting up the Jupyter Hub environment and installing all the dependencies that you'll need. See {doc}`getting_started`
 ```
 
@@ -20,7 +20,7 @@ We've provided a guide for setting up the Jupyter Hub environment and installing
 Reading material for the summer school and helpful resources for coding
 
 ```{admonition} Google Drive
-:class:note
+:class: note
 Slides and Reading material will be on the [google drive](https://drive.google.com/drive/folders/1mbkL9T2o9P4MHjQIOuxJgNdXby3lGmbm?usp=drive_link)
 ```
 
@@ -33,6 +33,15 @@ Slides and Reading material will be on the [google drive](https://drive.google.c
 ## Website Contents
 ```{toctree}
 :maxdepth: 2
-modules
+
+self
 getting_started
+curriculum
+```
+
+## Module Documentation Contents
+```{toctree}
+:caption: API
+:maxdepth: 2
+summer_school_modules
 ```

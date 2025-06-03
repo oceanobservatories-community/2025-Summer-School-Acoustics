@@ -13,6 +13,8 @@ copyright = "Ocean Observatories Initiative Community Workspace"
 author = "OOI Community"
 version = release = importlib.metadata.version("ooi_2025_summer_school_acoustics")
 
+html_title = "2025 OOI Summer School on Acoustics"
+
 extensions = [
     "myst_parser",
     "sphinx.ext.autodoc",
