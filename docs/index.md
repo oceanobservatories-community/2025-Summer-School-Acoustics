@@ -1,6 +1,8 @@
 # OOI 2025 Summer School on Acoustics
+![OOIFB Banner](../imgs/OOIFB_NSF_line_logo.png)
 
-![OOI logo](../imgs/summer_school_logo.png)
+
+![OOI Summer School Banner](../imgs/summer_school_logo.png)
 
 
 ```{warning}
