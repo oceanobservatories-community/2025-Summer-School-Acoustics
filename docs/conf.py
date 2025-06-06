@@ -2,11 +2,18 @@ from __future__ import annotations
 
 import importlib.metadata
 from typing import Any
+import sys
+from pathlib import Path
+
+# Add the source directory to Python path for autodoc
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 project = "ooi_2025_summer_school_acoustics"
 copyright = "Ocean Observatories Initiative Community Workspace"
 author = "OOI Community"
 version = release = importlib.metadata.version("ooi_2025_summer_school_acoustics")
+
+html_title = "2025 OOI Summer School on Acoustics"
 
 extensions = [
     "myst_parser",
