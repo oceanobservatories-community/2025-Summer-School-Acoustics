@@ -2,7 +2,8 @@
 ## Setting up Jupyter Hub
 For these instructions, we're going to use conda as our package manager. 
 
-**fork the summer school repository**
+### Get a copy of the repository on Jupyter Hub
+**fork the summer school repository** On GitHub, create a personal fork of the OOI summer school repository
 
 **create a clone of the summer school repository on jupyter hub**
 in the jupyter hub terminal app, clone the repository. Replace `<git url>` with the git url for your personal forked repo. You can copy the url by clicking the green `<> Code` button on the repo home page.
@@ -14,7 +15,26 @@ git clone <git url>
 cd 2025-Summer-School-Acoustics
 ```
 
-**Create a new virtual environment for the summer school**
+
+### Setting up Conda
+We'll be using conda as the python environment manager for this summer school. The OOI JupyterHub requires some set up so that conda works. These steps only need to be completed once.
+
+- initialize conda by running `init_conda.sh` script
+    - in the terminal app, navigate to the `scripts/` directory in summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
+    - then run the initialization script
+    ```bash
+    bash init_conda.sh
+    ```
+
+```{admonition} More about the script
+:class: dropdown
+This bash script does the following:
+- initializes bash by running the .bashrc file
+- set terminal to run .bashrc at every start
+- configure .condarc so it remembers and saves custom user environments
+```
+
+#### Create a new conda virtual environment
 
 In the terminal app in jupyter hub create the new conda environment
 ```bash
