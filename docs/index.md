@@ -1,6 +1,8 @@
 # OOI 2025 Summer School on Acoustics
+![OOIFB Banner](../imgs/OOIFB_NSF_line_logo.png)
 
-![OOI logo](../imgs/summer_school_logo.png)
+
+![OOI Summer School Banner](../imgs/summer_school_logo.png)
 
 
 ```{warning}
@@ -45,3 +47,6 @@ curriculum
 :maxdepth: 2
 summer_school_modules
 ```
+
+## Acknowledgments
+The NSF Ocean Observatories Initiative is a major facility sponsored by the U.S. National Science Foundation (NSF) under Cooperative Agreement No. 2244833. The summer school is organized by the OOI Facility Board with funding from NSF (award no 2434964).
