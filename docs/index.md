@@ -26,11 +26,16 @@ Reading material for the summer school and helpful resources for coding
 Slides and Reading material will be on the [google drive](https://drive.google.com/drive/folders/1mbkL9T2o9P4MHjQIOuxJgNdXby3lGmbm?usp=drive_link)
 ```
 
-### python resources
+### Python
 - [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/index.html)
 - [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/06-files.html)
 - [Project Pythia](https://projectpythia.org/)
 
+### Bioacoustics
+- [Discovery of Sound in the Sea](https://dosits.org/)
+- [Bioacoustics on StackExchange](https://bioacoustics.stackexchange.com/)
+- [Watkins marine mammal sound database](https://cis.whoi.edu/science/B/whalesounds/index.cfm)
+- [Orcasound learning resources](https://orcasound.net/learn)
 
 ## Website Contents
 ```{toctree}
