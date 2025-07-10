@@ -25,7 +25,10 @@ classifiers = [
 
 dependencies = [
   "xarray[complete]",
-  "ipykernel"
+  "matplotlib",
+  "ipykernel",
+  "hvplot",
+  "datashader",
 ]
 
 [project.optional-dependencies]
@@ -39,9 +42,9 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics#readme"
-Issues = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics/issues"
-Source = "https://github.com/John Ragland/ooi-2025-summer-school-acoustics"
+Documentation = "https://ooi-2025-summer-school-acoustics.readthedocs.io/en/latest/?badge=latest"
+Issues = "https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics/issues"
+Source = "https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics"
 
 [tool.hatch.version]
 path = "src/ooi_2025_summer_school_acoustics/__about__.py"
