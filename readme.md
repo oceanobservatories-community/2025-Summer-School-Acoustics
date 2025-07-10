@@ -1,57 +1,18 @@
 # OOI Summer School on Acoustics
-![OOI logo](imgs/ooi_logo.png)
 
-> [!WARNING] 👷
-> This repo is under construction. Come back soon!
+![OOFB Banner](imgs/OOIFB_NSF_line_logo.png)
+![Summer School Banner](imgs/summer_school_logo.png)
+
+[![Documentation Status](https://readthedocs.org/projects/ooi-2025-summer-school-acoustics/badge/?version=latest)](https://ooi-2025-summer-school-acoustics.readthedocs.io/en/latest/?badge=latest)
+
+> [!WARNING]
+> 👷 This repo is under construction. Come back soon!
+
+The full documentation can be found [here](https://ooi-2025-summer-school-acoustics.readthedocs.io/en/latest/)
+
 <!-- SPHINX-START -->
 
-## Getting Started
+The repository for the *OOI 2025 Summer School on Acoustics* contains the lecture materials, notebooks, and supplementary code for the summer school.
 
-### Setting up your coding environment
-For these instructions, we're going to use conda as our package manager. You're welcome to use another package manager if you're comfortable with it. 
-
-**fork the summer school repository**
-
-**create a clone of the summer school repository on jupyter hub**
-in the jupyter hub terminal app, clone the repository. Replace `<git url>` with the git url for your personal forked repo. You can copy the url by clicking the green `<> Code` button on the repo home page.
-<img src="/imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
-
-
-```bash
-git clone <git url>
-cd 2025-Summer-School-Acoustics
-```
-
-**Create a new virtual environment for the summer school**
-
-In the terminal app in jupyter hub create the new conda environment
-```bash
-conda create --name ooi_acoustics
-```
-
-Install python (we'll use version 3.12)
-
-```bash
-conda install python=3.12
-```
-
-Install the Summer School repository as a python package. This will automatically install all python packages that we'll be using for the summer school.
-
-```bash
-conda activate ooi_acoustics
-pip install -e .
-```
-
-Register the conda environment as a Jupyter kernel
-```bash
-python -m ipykernel install --user --name ooi_acoustics --display-name "Python (ooi_acoustics)"
-```
-
-Refresh your browser page so that the jupyter hub server refreshes.
-
-Now, when you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right
-
-<img src="/imgs/ipy_kernel1.png" alt="GitHub Clone Button" width="300"/>
-
-select the dropdown, and select the environment that we just created
-<img src="/imgs/ipy_kernel2.png" alt="GitHub Clone Button" width="300"/>
+## Acknowledgments
+The NSF Ocean Observatories Initiative is a major facility sponsored by the U.S. National Science Foundation (NSF) under Cooperative Agreement No. 2244833. The summer school is organized by the OOI Facility Board with funding from NSF (award no 2434964).

@@ -3,10 +3,10 @@
 # You can set these variables from the command line
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXAPIDOC  = sphinx-apidoc
+SPHINXAPIDOC  = 
 SOURCEDIR     = .
 BUILDDIR      = _build/
-PROJECTDIR    = ../../2025-summer-school-acoustics  # Change this to your Python project directory
+PROJECTDIR    = ../../2025-summer-school-acoustics/src/ooi_2025_summer_school_acoustics/  # Change this to your Python project directory
 
 .PHONY: help clean html apidoc
 

@@ -29,11 +29,18 @@ dependencies = [
   "ipykernel",
   "hvplot",
   "datashader",
+  "das4whales@git+https://github.com/DAS4Whales/DAS4Whales"
 ]
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [project.optional-dependencies]
 dev = [
-  "hatch",
+  "hatch"
+]
+
+docs=[
   "sphinx",
   "myst_parser",
   "sphinx-autodoc-typehints",
