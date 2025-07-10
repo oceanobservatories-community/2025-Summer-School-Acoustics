@@ -29,7 +29,7 @@ dependencies = [
   "ipykernel",
   "hvplot",
   "datashader",
-  "das4whales@git+https://github.com/DAS4Whales/DAS4Whales"
+  "das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025"
 ]
 
 [tool.hatch.metadata]
