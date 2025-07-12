@@ -33,7 +33,7 @@ The next step is to choose the server size and type (Figure 3). For this summer 
   <img src="/imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="500"/>
   <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
-<br>
+<br/><br/>
 At this point, you should see a screen that looks like the one below in Figure 4. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following examples.
 
 <figure>
