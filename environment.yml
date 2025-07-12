@@ -8,7 +8,6 @@ dependencies:
   - ipykernel
   - s3fs
   - matplotlib
-  - numpy<2
   - pip
   # -- holoviz --
   - jupyter_bokeh
