@@ -9,12 +9,11 @@ dependencies:
   - s3fs
   - matplotlib
   - pip
-  # -- holoviz --
+  # -- viz related --
   - jupyter_bokeh
   - datashader
   - holoviews
   - hvplot
-  # -- echopype --
-  # echopype main branch contains latest changes (not in the stable release)
+  # -- others --
   - pip:
     - das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025
