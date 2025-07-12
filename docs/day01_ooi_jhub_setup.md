@@ -34,7 +34,7 @@ You can login to the hub at https://jupyter.oceanobservatories.org using [CILogo
 The next step is to choose the server size and type (Figure 3). For most applications, a “Large” server will suffice. However, if you are planning on processing large volumes of data, then you are encouraged to select the “X-Large” or “XX-Large” servers. Newer servers, using the Nvidia GPUs have been added for individuals interested in processing large volumes of data for modelling or machine learning applications using PyTorch or TensorFlow.
 
 <figure>
-  <img src="/imgs/jhub_ooi_login.png" alt="OOI JupyterHub login page" width="500"/>
+  <img src="/imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="500"/>
   <figcaption>Figure 3. Selection of the server type and size. Most users will want to select a “Large”, “X-Large” or “XX-Large” server (MATLAB users will
 want to select “MATLAB – Medium”. Individuals looking to explore the use of GPUs for modeling or machine learning applications will
 want to select one of the Nvidia GPU servers.</figcaption>
