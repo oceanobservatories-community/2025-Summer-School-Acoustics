@@ -3,15 +3,15 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - python=3.12
   - echopype
   - ipykernel
-  - s3fs
   - matplotlib
   - pip
+  - python=3.12
+  - s3fs
   # -- viz related --
-  - jupyter_bokeh
   - datashader
+  - jupyter_bokeh
   - holoviews
   - hvplot
   # -- others --
