@@ -14,15 +14,18 @@ The email account you provide when applying for access will be used to create an
 
 You can login to the hub at https://jupyter.oceanobservatories.org using [CILogon](https://cilogon.org/) (Figure 1) with your email account and the appropriate identity provider (use the drop-down menu in Figure 2, select your institution, and Log In). You will need to login using your home organization’s credential system. Again, OOI will not store this information and has no access to it or control over it, instead the JupyterHub will use cookies set by [CILogon](https://cilogon.org/) after you are authenticated to grant access if the account is in the allowed listing.
 
-<p float="left">
-  <img src="/imgs/jhub_ooi_login.png" alt="OOI JupyterHub login page" width="500"/>
-  <figcaption>Figure 1. Initial login page for the OOI JupyterHub using
-CILogon.</figcaption>
-  <img src="/imgs/jhub_cilogon.png" alt="OOI JupyterHub CILogon page" width="500"/>
-  <figcaption>Figure 2. Selection of identity provider in CILogon; usually the
-user’s home institution allowing them to select and use their
-institution’s credential system.</figcaption>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="/imgs/jhub_ooi_login.png" alt="OOI JupyterHub login page" width="500"/><br/>
+      <em>Figure 1. Initial login page for the OOI JupyterHub using CILogon.</em>
+    </td>
+    <td align="center">
+      <img src="/imgs/jhub_cilogon.png" alt="OOI JupyterHub CILogon page" width="500"/><br/>
+      <em>Figure 2. Selection of identity provider in CILogon; usually the user’s home institution allowing them to select and use their institution’s credential system.</em>
+    </td>
+  </tr>
+</table>
 
 For these instructions, we're going to use `conda` as our package and environment manager. 
 
