@@ -34,6 +34,7 @@ The next step is to choose the server size and type (Figure 3). For this summer 
   <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
 
+
 At this point, you should see a screen that looks like the one below in Figure 4. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following examples.
 
 <figure>
@@ -43,16 +44,17 @@ left. The ooi directory is the third one down in the file browser on the left. T
 your JupyterHub.</em></figcaption>
 </figure>
 
-For these instructions, we're going to use `conda` as our package and environment manager. 
 
-### Get a copy of the repository on Jupyter Hub
-**fork the summer school repository** On GitHub, create a personal fork of the OOI summer school repository
+For the next set of instructions, we're going to use `conda` as our package and environment manager. 
 
-**create a clone of the summer school repository on jupyter hub**
-in the jupyter hub terminal app, clone the repository. Replace `<git url>` with the git url for your personal forked repo. You can copy the url by clicking the green `<> Code` button on the repo home page.
+### Download the summer school repository on JupyterHub
+
+The OOI Summer School on Acoustics will be sharing materials via a [GitHub repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics). Here we will be providing notebooks and instructions for participants to follow along. To download this repository into JupyterHub, we will use the `git clone` command. 
+
+First, go to the summer school [repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics) and copy the URL by clicking the green `<> Code` button on the repo home page.
 <img src="/imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
 
-
+Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. Replace `<git url>` with the URL you just copied.
 ```bash
 git clone <git url>
 cd 2025-Summer-School-Acoustics
