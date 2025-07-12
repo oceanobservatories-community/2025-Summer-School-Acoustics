@@ -8,10 +8,6 @@ Additional information on JupyterHub and JupyterLab can be found online:
 - [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/)
 - [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/)
 
-If you haven’t already, request access to the JupyterHub via from the link on the login page. This will open an email that you can use to make the request. Please provide your name, the institution or program you are working with, an email address to assign to the account (see further information below), and a brief description of how you plan on using the data. 
-
-The email account you provide when applying for access will be used to create an account for you on the JupyterHub. OOI uses [CILogon](https://cilogon.org/) to manage access to the JupyterHub (we do not maintain a database of access credentials, rather a listing of allowed users), so you need to provide an email account that is linked to a known identity provider (e.g., your home organization).
-
 You can login to the hub at https://jupyter.oceanobservatories.org using [CILogon](https://cilogon.org/) (Figure 1) with your email account and the appropriate identity provider (use the drop-down menu in Figure 2, select your institution, and Log In). You will need to login using your home organization’s credential system. Again, OOI will not store this information and has no access to it or control over it, instead the JupyterHub will use cookies set by [CILogon](https://cilogon.org/) after you are authenticated to grant access if the account is in the allowed listing.
 
 <table style="width:100%">
@@ -31,13 +27,11 @@ You can login to the hub at https://jupyter.oceanobservatories.org using [CILogo
   </tr>
 </table>
 
-The next step is to choose the server size and type (Figure 3). For most applications, a “Large” server will suffice. However, if you are planning on processing large volumes of data, then you are encouraged to select the “X-Large” or “XX-Large” servers. Newer servers, using the Nvidia GPUs have been added for individuals interested in processing large volumes of data for modelling or machine learning applications using PyTorch or TensorFlow.
+The next step is to choose the server size and type (Figure 3). For this summer school, a “Standard” server will suffice. 
 
 <figure>
   <img src="/imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="500"/>
-  <figcaption><em>Figure 3. Selection of the server type and size. Most users will want to select a “Large”, “X-Large” or “XX-Large” server (MATLAB users will
-want to select “MATLAB – Medium”. Individuals looking to explore the use of GPUs for modeling or machine learning applications will
-want to select one of the Nvidia GPU servers.</em></figcaption>
+  <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
 
 For these instructions, we're going to use `conda` as our package and environment manager. 
