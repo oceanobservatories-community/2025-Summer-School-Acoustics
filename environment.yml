@@ -1,0 +1,21 @@
+name: ooi_acoustics
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - echopype
+  - ipykernel
+  - s3fs
+  - matplotlib
+  - numpy<2
+  - pip
+  # -- holoviz --
+  - jupyter_bokeh
+  - datashader
+  - holoviews
+  - hvplot
+  # -- echopype --
+  # echopype main branch contains latest changes (not in the stable release)
+  - pip:
+    - das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025
