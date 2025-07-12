@@ -33,8 +33,7 @@ The next step is to choose the server size and type (Figure 3). For this summer 
   <img src="/imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="500"/>
   <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
-
-
+<br>
 At this point, you should see a screen that looks like the one below in Figure 4. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following examples.
 
 <figure>
@@ -44,8 +43,6 @@ left. The ooi directory is the third one down in the file browser on the left. T
 your JupyterHub.</em></figcaption>
 </figure>
 
-
-For the next set of instructions, we're going to use `conda` as our package and environment manager. 
 
 ### Download the summer school repository on JupyterHub
 
@@ -59,7 +56,6 @@ Then open the JupyterHub terminal and run the commands below to 1) download the 
 git clone <git url>
 cd 2025-Summer-School-Acoustics
 ```
-
 
 ### Setting up Conda
 We'll be using conda as the python environment manager for this summer school. The OOI JupyterHub requires some set up so that conda works. These steps only need to be completed once.
