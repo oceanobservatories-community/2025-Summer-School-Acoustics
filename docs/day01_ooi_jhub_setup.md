@@ -35,9 +35,9 @@ The next step is to choose the server size and type (Figure 3). For most applica
 
 <figure>
   <img src="/imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="500"/>
-  <figcaption>Figure 3. Selection of the server type and size. Most users will want to select a “Large”, “X-Large” or “XX-Large” server (MATLAB users will
+  <figcaption><em>Figure 3. Selection of the server type and size. Most users will want to select a “Large”, “X-Large” or “XX-Large” server (MATLAB users will
 want to select “MATLAB – Medium”. Individuals looking to explore the use of GPUs for modeling or machine learning applications will
-want to select one of the Nvidia GPU servers.</figcaption>
+want to select one of the Nvidia GPU servers.</em></figcaption>
 </figure>
 
 For these instructions, we're going to use `conda` as our package and environment manager. 
