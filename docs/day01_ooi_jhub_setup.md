@@ -120,10 +120,10 @@ bash setup_ooi_creds.sh
 Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. We are done using the JupyterHub terminal and can now start using the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
 <figure>
-<img src="/imgs/jhub_notebook.png" alt="JupyterHub notebook" width="300"/>
+<img src="/imgs/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
 <figcaption><em>Figure 6. When you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right.</em></figcaption>
 </figure>
-
+<br/><br/>
 Change the kernel from the default `Python 3 (ipykernel)` to the `ooi` environment we created.
 
 Jupyter notebooks allow users to have cells containing Markdown notes along with cells containing code and code outputs. Each of these can be minimized or expanded. Let's all add our names to the top of the notebook by creating a Markdown cell.
