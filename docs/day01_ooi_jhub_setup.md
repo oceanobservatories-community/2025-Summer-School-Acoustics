@@ -26,7 +26,7 @@ You can login to the hub at https://jupyter.oceanobservatories.org using [CILogo
     </td>
     <td align="center">
       <img src="/imgs/jhub_cilogon.png" alt="OOI JupyterHub CILogon page" width="500"/><br/>
-      <em>Figure 2. Selection of identity provider in CILogon; usually the user’s home institution allowing them to select and use their institution’s credential system.</em>
+      <em>Figure 2. Selection of identity provider in CILogon;<br/>usually the user’s home institution allowing them to select<br/>and use their institution’s credential system.</em>
     </td>
   </tr>
 </table>
