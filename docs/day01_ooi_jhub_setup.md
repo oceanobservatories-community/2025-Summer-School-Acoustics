@@ -34,6 +34,15 @@ The next step is to choose the server size and type (Figure 3). For this summer 
   <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
 
+At this point, you should see a screen that looks like the one below in Figure 4. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following examples.
+
+<figure>
+  <img src="/imgs/jhub_start_page.png" alt="OOI JupyterHub start page" width="500"/>
+  <figcaption><em>Figure 4. JupyterLab session with Launcher tab on the right showing the different notebook and console options, and a file browser to the
+left. The ooi directory is the third one down in the file browser on the left. This would be the only you would see the first time you set up
+your JupyterHub.</em></figcaption>
+</figure>
+
 For these instructions, we're going to use `conda` as our package and environment manager. 
 
 ### Get a copy of the repository on Jupyter Hub
