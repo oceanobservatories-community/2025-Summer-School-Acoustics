@@ -7,22 +7,6 @@ import warnings
 import pandas as pd
 import numpy as np
 
-def open_lf_hydrophones():
-    """
-    open low frequency hydrophone zarr dataset. By default, this dataset does not have a time coord.
-    
-    Returns
-    -------
-    ds : xr.Dataset
-        xarray dataset of the hydrophone time-series data
-    """
-
-    # temporary dataset path, until data is uploaded to Jupyter Hub
-    dataset_path = '/Volumes/ODL/ODLdata/ooiHydrophones/LFRawData/ooi_lfhydrophones.zarr'
-
-    ds = xr.open_zarr(dataset_path)
-    return ds
-
 def slice_lf_hydrophones(ds, start_time, end_time, include_coord=True, time_base=pd.Timestamp('2015-01-01')):
     '''
     slice_lf_hydrophones - slices dataset using time slice and assigns coordinates to time dimension

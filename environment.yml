@@ -14,6 +14,7 @@ dependencies:
   - jupyter_bokeh
   - holoviews
   - hvplot
+  - seaborn
   # -- others --
   - pip:
     - das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025
