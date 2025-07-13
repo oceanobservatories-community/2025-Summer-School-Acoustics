@@ -43,6 +43,7 @@ Slides and Reading material will be on the [google drive](https://drive.google.c
 
 self
 getting_started
+day01_ooi_jhub_setup
 curriculum
 ```
 
