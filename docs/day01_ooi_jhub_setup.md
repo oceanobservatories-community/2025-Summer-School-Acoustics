@@ -33,6 +33,7 @@ The next step is to choose the server size and type (Figure 3). For this summer 
   <figcaption><em>Figure 3. Selection of the server type and size.</em></figcaption>
 </figure>
 <br/><br/>
+
 At this point, you should see a screen that looks like the one below in Figure 4. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following examples.
 
 <figure>
@@ -130,6 +131,7 @@ Now we can run the provided example notebook within the ooi-data-explorations di
 <figcaption><em>Figure 6. When you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right.</em></figcaption>
 </figure>
 <br/><br/>
+
 Change the kernel from the default `Python 3 (ipykernel)` to the `ooi` environment we created.
 
 Jupyter notebooks allow users to have cells containing Markdown notes along with cells containing code and code outputs. Each of these can be minimized or expanded. Let's all add our names to the top of the notebook by creating a Markdown cell.
