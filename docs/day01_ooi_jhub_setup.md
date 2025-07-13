@@ -39,7 +39,7 @@ First, go to the summer school [repository](https://github.com/oceanobservatorie
 :align: center
 ```
 
-Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
+Then open the JupyterHub terminal and run the commands below to clone the GitHub repository. 
 ```bash
 git clone https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics.git
 ```
