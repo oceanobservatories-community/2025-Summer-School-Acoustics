@@ -16,14 +16,14 @@ You can login to the OOI JupyterHub at https://jupyter.oceanobservatories.org us
 The next step is to choose the server size and type. Choose "Large" for the summer school:
 
 <figure>
-  <img src="../imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="800"/>
+  <img src="img/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="800"/>
 </figure>
 <br/><br/>
 
 At this point, you should see a screen that looks like the one below. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following steps.
 
 <figure>
-  <img src="../imgs/jhub_start_page.png" alt="OOI JupyterHub start page" width="800"/>
+  <img src="img/jhub_start_page.png" alt="OOI JupyterHub start page" width="800"/>
 </figure>
 
 
@@ -33,7 +33,7 @@ The OOI Summer School on Acoustics will be sharing materials via a [GitHub repos
 
 First, go to the summer school [repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics) and copy the URL by clicking the green `<> Code` button on the repo home page.
 <figure>
-<img src="../imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
+<img src="img/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
 </figure>
 
 Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
@@ -120,7 +120,7 @@ Now we can run the provided example notebook within the `ooi-data-explorations` 
 
 When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
 <figure>
-<img src="../imgs/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
+<img src="img/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
 </figure>
 <br/><br/>
 
