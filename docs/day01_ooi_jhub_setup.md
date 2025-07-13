@@ -121,7 +121,7 @@ In the JupyterHub terminal:
 
 Now we can run the provided example notebook within the `ooi-data-explorations` folder to see if all the packages have been installed properly. On the JupyterHub, use the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
-When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
+When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi_acoustics` environment we just created.
 ```{image} ./img/jhub_notebook.png
 :width: 500px
 :align: center
