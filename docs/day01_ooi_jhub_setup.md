@@ -17,7 +17,6 @@ The next step is to choose the server size and type. Choose "Large" for the summ
 
 <figure>
   <img src="../imgs/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="800"/>
-  <figcaption><em>Selection of the server type and size.</em></figcaption>
 </figure>
 <br/><br/>
 
@@ -25,9 +24,6 @@ At this point, you should see a screen that looks like the one below. From the L
 
 <figure>
   <img src="../imgs/jhub_start_page.png" alt="OOI JupyterHub start page" width="800"/>
-  <figcaption><em>JupyterLab session with Launcher tab on the right showing the different notebook and console options, and a file browser to the
-left. The ooi directory is the third one down in the file browser on the left. This would be the only you would see the first time you set up
-your JupyterHub.</em></figcaption>
 </figure>
 
 
@@ -38,7 +34,6 @@ The OOI Summer School on Acoustics will be sharing materials via a [GitHub repos
 First, go to the summer school [repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics) and copy the URL by clicking the green `<> Code` button on the repo home page.
 <figure>
 <img src="../imgs/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
-<figcaption><em>GitHub clone button offers a URL from which `git clone` can download the repository.</em></figcaption>
 </figure>
 
 Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
@@ -126,7 +121,6 @@ Now we can run the provided example notebook within the `ooi-data-explorations` 
 When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
 <figure>
 <img src="../imgs/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
-<figcaption><em>When you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right.</em></figcaption>
 </figure>
 <br/><br/>
 
