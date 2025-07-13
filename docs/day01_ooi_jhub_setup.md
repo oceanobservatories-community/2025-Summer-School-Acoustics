@@ -60,12 +60,37 @@ git clone <git url>
 cd 2025-Summer-School-Acoustics
 ```
 
-## Setting up `conda`
+# Setting up `conda`
 We'll be using `conda` as the python environment manager for this summer school. To understand what `conda` is and why we need to use `conda`, we recommend Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
 - Isolation of dependencies
 - Reproducibility
 - Ease of management
 - Testing and development
+
+## Installing `conda` via Miniforge for local machine
+
+JupyterHub comes with conda installed so that users can create virtual environments from the start. However, if your computer does not have conda installed, we suggest installing [Miniforge](https://github.com/conda-forge/miniforge) as a way to get access to [Conda](https://conda.io/), [Mamba](https://github.com/mamba-org/mamba) and Python, with conda-forge as default channel.  
+Once Miniforge is installed, you should be able to use `conda` and `mamba` in your terminal.  
+
+We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
+
+**Mac & Linux**: Download the installer and open your computer's terminal to run the command:
+```
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
+You may need to `cd ...` into the folder that contains your downloaded file first.
+
+Follow the installer and type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
+
+**Windows**: Download and run the Windows installer `.exe` file.  
+As you go through the installer, make sure you:
+1) Agree to the License Agreement
+2) Install for "Just Me (recommended)"
+3) Install in the default folder `C:\Users\[ACCOUNT_NAME]\miniforge3`
+4) Check only "Create shortcuts (supported packages only)", "Add Miniforge3 to my PATH environment variable", and "Register Miniforge3 as my default Python 3.12"
+5) Wait for installation and click on Next and Finish.
+
+We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please download [Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
 
 The OOI JupyterHub requires some set up so that `conda` works. These steps only need to be completed once.
 
@@ -84,7 +109,7 @@ This bash script does the following:
 - Configure .condarc so it remembers and saves custom user environments
 ```
 
-### Create a `conda` virtual environment
+## Create a `conda` virtual environment
 
 For testing OOI data access setup, we will be creating a `conda` virtual environment to be able to run a notebook that will load data from the [OOI Gold Copy THREDDS
 catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html).
@@ -102,7 +127,7 @@ conda activate ooi
 python -m ipykernel install --user --name=ooi
 ```
 
-## Setting up OOI data access credentials
+# Setting up OOI data access credentials
 
 In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set our access credentials. Once you have your credentials set up on your computer, you do not need to re-run these commands.
 
@@ -122,7 +147,7 @@ nano setup_ooi_creds.sh
 bash setup_ooi_creds.sh
 ```
 
-## Running the test notebook
+# Running the test notebook
 
 Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. We are done using the JupyterHub terminal and can now start using the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
