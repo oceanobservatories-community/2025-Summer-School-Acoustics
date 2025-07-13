@@ -42,8 +42,9 @@ First, go to the summer school [repository](https://github.com/oceanobservatorie
 Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
 ```bash
 git clone https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics.git
-cd 2025-Summer-School-Acoustics
 ```
+
+You should now see a folder called `2025-Summer-School-Acoustics.git` in your navigation window on the left.
 
 
 ## Set up `conda`
@@ -66,7 +67,9 @@ The steps can be completed by running the `init_conda.sh` script:
 - In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
 - Run the initialization script
   ```bash
-  bash init_conda.sh
+  cd ~  # make sure you're in the home directory
+  cd 2025-Summer-School-Acoustics/scripts  # go into the scripts directory
+  bash init_conda.sh  # run the script
   ```
 
 ```{admonition} What's in the script?
@@ -87,18 +90,16 @@ In the JupyterHub terminal:
 - Navigate to the `environment.yml` file in the summer school repository and run the following command. This will take some time. Type `y` and hit `ENTER` when prompted if you want to install any packages.
 
   ```bash
-  cd ~/2025-Summer-School-Acoustics/NoteBooks/day01_ooi_data_access
+  cd ~  # make sure you're in the home directory
   conda env create -f environment.yml
   ```
 - After the environment has been created, `activate` it
   ```bash
-  conda activate ooi
-  python -m ipykernel install --user --name=ooi
+  conda activate ooi_acoustics
   ```
 - Register the environment as a Jupyter kernel
   ```bash
-  conda activate ooi
-  python -m ipykernel install --user --name=ooi
+  python -m ipykernel install --user --name=ooi_acoustics
   ```
 
 
@@ -113,10 +114,11 @@ We will next create a `.netrc` file in our home directory to store these access 
 
 In the JupyterHub terminal:
 - Navigate to the `scripts/` directory in the cloned summer school repository
-- Edit the `setup_ooi_creds.sh` script to replace `API_Username` and `API_Token` with your copied values from above. The `nano` command will help you edit
   ```bash
-  nano setup_ooi_creds.sh
+  cd ~
+  cd 2025-Summer-School-Acoustics/scripts
   ```
+- Edit the `setup_ooi_creds.sh` script to replace `API_Username` and `API_Token` with your copied values from above by double-clicking on the `setup_ooi_creds.sh` file and editing it.
 - Run the OOI access credentials setup script
   ```bash
   bash setup_ooi_creds.sh
