@@ -1,7 +1,7 @@
 # Setting up the JupyterHub environment
 
 ## Log on the OOI JupyterHub
-Access to the NSF OOI JupyterHub is available to researchers and students looking to interact with OOI data. [JupyterHub]((https://jupyterhub.readthedocs.io/en/latest/)) creates encapsulated [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) environments unique to each user.
+Access to the NSF OOI JupyterHub is available to researchers and students looking to interact with OOI data. [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/) creates encapsulated [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) environments unique to each user.
 
 The JupyterHub is set up to provide users with the option of using the following programming languages:
 - [Python](https://www.python.org/)
@@ -11,7 +11,7 @@ The JupyterHub is set up to provide users with the option of using the following
 
 Users can explore and analyze OOI data using a high-performance computing cluster co-located with the data (both the [raw](https://rawdata.oceanobservatories.org/files/) and processed [netCDF](https://www.unidata.ucar.edu/software/netcdf/) files, which are also accessible via the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html)).
 
-You can login to the OOI JupyterHub at https://jupyter.oceanobservatories.org using [CILogon](https://cilogon.org/) with your email account and the appropriate identity provider (use the drop-down menu to select your institution, and Log In). You will need to login using your home organization’s credential system.
+You can login to the OOI JupyterHub at [https://jupyter.oceanobservatories.org](https://jupyter.oceanobservatories.org) using [CILogon](https://cilogon.org/) with your email account and the appropriate identity provider (use the drop-down menu to select your institution, and Log In). You will need to login using your home organization’s credential system.
 
 The next step is to choose the server size and type. Choose "Large" for the summer school:
 
