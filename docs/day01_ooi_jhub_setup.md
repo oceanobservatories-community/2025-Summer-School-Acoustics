@@ -59,8 +59,14 @@ git clone <git url>
 cd 2025-Summer-School-Acoustics
 ```
 
-## Setting up Conda
-We'll be using `conda` as the python environment manager for this summer school. The OOI JupyterHub requires some set up so that `conda` works. These steps only need to be completed once.
+## Setting up `conda`
+We'll be using `conda` as the python environment manager for this summer school. To understand what `conda` is and why we need to use `conda`, we recommend Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
+- Isolation of dependencies
+- Reproducibility
+- Ease of management
+- Testing and development
+
+The OOI JupyterHub requires some set up so that `conda` works. These steps only need to be completed once.
 
 - Initialize `conda` by running `init_conda.sh` script
     - In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
