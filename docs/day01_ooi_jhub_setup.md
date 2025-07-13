@@ -19,17 +19,14 @@ The next step is to choose the server size and type. Choose "Large" for the summ
 :width: 800px
 :align: center
 ```
-
-<figure>
-  <img src="./img/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="800"/>
-</figure>
 <br/><br/>
 
 At this point, you should see a screen that looks like the one below. From the Launcher tab, select the “Terminal” launcher under the “Other” category. This is a Linux terminal running the bash shell which will be used extensively in the following steps.
 
-<figure>
-  <img src="./img/jhub_start_page.png" alt="OOI JupyterHub start page" width="800"/>
-</figure>
+```{image} ./img/jhub_start_page.png
+:width: 800px
+:align: center
+```
 
 
 ## Clone the summer school repository
@@ -37,9 +34,10 @@ At this point, you should see a screen that looks like the one below. From the L
 The OOI Summer School on Acoustics will be sharing materials via a [GitHub repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics). Here we will be providing notebooks and instructions for participants to follow along. To download this repository into JupyterHub, we will use the `git clone` command. 
 
 First, go to the summer school [repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics) and copy the URL by clicking the green `<> Code` button on the repo home page.
-<figure>
-<img src="./img/GitHub_clone.png" alt="GitHub Clone Button" width="300"/>
-</figure>
+```{image} ./img/GitHub_clone.png
+:width: 300px
+:align: center
+```
 
 Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
 ```bash
@@ -127,9 +125,10 @@ In the JupyterHub terminal:
 Now we can run the provided example notebook within the `ooi-data-explorations` folder to see if all the packages have been installed properly. On the JupyterHub, use the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
 When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
-<figure>
-<img src="./img/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
-</figure>
+```{image} ./img/jhub_notebook.png
+:width: 500px
+:align: center
+```
 <br/><br/>
 
 Jupyter notebooks allow users to have cells containing Markdown notes along with cells containing code and code outputs. Each of these can be minimized or expanded. Let's all add our names to the top of the notebook by creating a Markdown cell.
