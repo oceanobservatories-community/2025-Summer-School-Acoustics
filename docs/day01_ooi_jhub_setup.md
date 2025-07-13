@@ -1,6 +1,6 @@
 # Setting up the JupyterHub environment
 
-## Logging in
+## Log on the OOI JupyterHub
 Access to the NSF OOI JupyterHub is available to researchers and students looking to interact with OOI data. [JupyterHub]((https://jupyterhub.readthedocs.io/en/latest/)) creates encapsulated [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) environments unique to each user.
 
 The JupyterHub is set up to provide users with the option of using the following programming languages:
@@ -42,7 +42,8 @@ git clone https://github.com/oceanobservatories-community/2025-Summer-School-Aco
 cd 2025-Summer-School-Acoustics
 ```
 
-## Setting up `conda`
+
+## Set up `conda`
 
 [Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager we will be using for this summer school. Using conda has the following benefits:
 - Isolation of dependencies
@@ -73,6 +74,7 @@ This bash script does the following:
 - Configure .condarc so it remembers and saves custom user environments
 ```
 
+
 ## Create a `conda` environment
 
 Now we will create a `conda` environment to run a test notebook that will load data from the [OOI Gold Copy THREDDS
@@ -96,7 +98,8 @@ In the JupyterHub terminal:
   python -m ipykernel install --user --name=ooi
   ```
 
-## Setting up OOI data access credentials
+
+## Set up OOI data access credentials
 In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set up our access credentials. This setup **only need to be completed once**.
 - If you haven't already done so, either create a user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/) (original OOI website and API server for the OOI M2M system), or use the [CILogon](https://cilogon.org/) button with an academic or Google account (login button is towards the upper right corner of the web page) to login to the portal.
 - After you login, the “Log In” text will change to your username.
