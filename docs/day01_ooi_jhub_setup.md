@@ -15,6 +15,11 @@ You can login to the OOI JupyterHub at https://jupyter.oceanobservatories.org us
 
 The next step is to choose the server size and type. Choose "Large" for the summer school:
 
+```{image} ./img/jhub_server_sizes.png
+:width: 800px
+:align: center
+```
+
 <figure>
   <img src="./img/jhub_server_sizes.png" alt="OOI JupyterHub server sizes" width="800"/>
 </figure>
