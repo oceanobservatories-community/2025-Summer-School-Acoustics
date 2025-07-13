@@ -3,3 +3,5 @@ docs/_build/
 *.pyc
 docs/*.rst
 .ipynb_checkpoints/
+*.nc
+mean_aggregation.png
