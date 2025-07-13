@@ -55,11 +55,7 @@ You should now see a folder called `2025-Summer-School-Acoustics.git` in your na
 - Ease of management
 - Testing and development
 
-To know more about `conda` and why we recommend it, visit Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
-- Isolation of dependencies
-- Reproducibility
-- Ease of management
-- Testing and development
+To know more about `conda` and why we recommend it, visit Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F).
 
 The OOI JupyterHub requires some initial setup to make `conda` works. This setup **only need to be completed once**.
 
