@@ -44,7 +44,7 @@ your JupyterHub.</em></figcaption>
 </figure>
 
 
-## Download the summer school repository on JupyterHub
+## Clone the summer school repository on JupyterHub
 
 The OOI Summer School on Acoustics will be sharing materials via a [GitHub repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics). Here we will be providing notebooks and instructions for participants to follow along. To download this repository into JupyterHub, we will use the `git clone` command. 
 
@@ -54,9 +54,9 @@ First, go to the summer school [repository](https://github.com/oceanobservatorie
 <figcaption><em>Figure 5. GitHub clone button offers a URL from which `git clone` can download the repository.</em></figcaption>
 </figure>
 
-Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. Replace `<git url>` with the URL you just copied.
+Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
 ```bash
-git clone <git url>
+git clone https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics.git
 cd 2025-Summer-School-Acoustics
 ```
 
