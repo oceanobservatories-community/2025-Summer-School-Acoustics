@@ -1,0 +1,47 @@
+name: ooi
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - argcomplete
+  - beautifulsoup4
+  - bottleneck
+  - chest
+  - conda-build
+  - configobj
+  - dask
+  - erddapy
+  - flox
+  - geos
+  - gsw
+  - hdf4
+  - h5netcdf
+  - ipympl
+  - ioos_qc
+  - jupyterlab
+  - libnetcdf
+  - matplotlib
+  - munch>=2.1.0
+  - netcdf4
+  - nodejs
+  - nose
+  - numexpr
+  - numpy=1.26
+  - pip
+  - pyasn1
+  - pyCO2SYS
+  - pyIGRF
+  - pyncml
+  - pytz
+  - pysolar
+  - pyYAML
+  - scipy
+  - simplejson
+  - sockjs-tornado
+  - tqdm
+  - xarray
+  - xlrd
+  - yaml
+  - pip:
+    - https://bitbucket.org/ooicgsn/pyseas/get/develop.zip
