@@ -4,4 +4,4 @@ docs/_build/
 docs/*.rst
 .ipynb_checkpoints/
 *.nc
-mean_aggreagtion.png
+mean_aggregation.png
