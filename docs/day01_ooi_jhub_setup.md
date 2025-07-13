@@ -64,8 +64,7 @@ To know more about `conda` and why we recommend it, visit Anaconda's [documentat
 The OOI JupyterHub requires some initial setup to make `conda` works. This setup **only need to be completed once**.
 
 The steps can be completed by running the `init_conda.sh` script:
-- In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
-- Run the initialization script
+- Run the initialization script in the JupyterHub terminal:
   ```bash
   cd ~  # make sure you're in the home directory
   cd 2025-Summer-School-Acoustics/scripts  # go into the scripts directory
@@ -90,14 +89,14 @@ In the JupyterHub terminal:
 - Navigate to the `environment.yml` file in the summer school repository and run the following command. This will take some time. Type `y` and hit `ENTER` when prompted if you want to install any packages.
 
   ```bash
-  cd ~  # make sure you're in the home directory
+  cd 2025-Summer-School-Acoustics  # go into the summer school repo
   conda env create -f environment.yml
   ```
-- After the environment has been created, `activate` it
+- After the environment has been created, **activate** it:
   ```bash
   conda activate ooi_acoustics
   ```
-- Register the environment as a Jupyter kernel
+- Register the environment as a Jupyter kernel so that you can use it in a notebook:
   ```bash
   python -m ipykernel install --user --name=ooi_acoustics
   ```
@@ -113,7 +112,7 @@ In order to access data and/or metadata (e.g., calibration coefficients) collect
 We will next create a `.netrc` file in our home directory to store these access credentials. Set up these access credentials by running the `setup_ooi_creds.sh` script.
 
 In the JupyterHub terminal:
-- Navigate to the `scripts/` directory in the cloned summer school repository
+- Navigate to the `scripts` directory in the cloned summer school repository
   ```bash
   cd ~
   cd 2025-Summer-School-Acoustics/scripts
