@@ -1,4 +1,4 @@
-# Setting up Jupyter Hub
+# Setting up the JupyterHub environment
 
 ## Logging in
 Access to the NSF Ocean Observatories Initiative (OOI) JupyterHub (https://jupyter.oceanobservatories.org), which creates encapsulated JupyterLab environments unique to each user, is available to researchers and students looking to interact with OOI data. The JupyterHub is set up to provide users with the option of using either [Python](https://www.python.org/), [R](https://www.r-project.org/), [MATLAB](https://www.mathworks.com/products/matlab.html) (users need to provide their own individual or institutional license for [MATLAB](https://www.mathworks.com/products/matlab.html)), or [Julia](https://julialang.org/) to access, explore and analyze OOI data using a high-performance computing cluster co-located with the data (both the [raw](https://rawdata.oceanobservatories.org/files/) and processed [netCDF](https://www.unidata.ucar.edu/software/netcdf/) files, which are also accessible via the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html)).
@@ -44,7 +44,7 @@ your JupyterHub.</em></figcaption>
 </figure>
 
 
-## Clone the summer school repository on JupyterHub
+## Clone the summer school repository
 
 The OOI Summer School on Acoustics will be sharing materials via a [GitHub repository](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics). Here we will be providing notebooks and instructions for participants to follow along. To download this repository into JupyterHub, we will use the `git clone` command. 
 
@@ -60,48 +60,30 @@ git clone https://github.com/oceanobservatories-community/2025-Summer-School-Aco
 cd 2025-Summer-School-Acoustics
 ```
 
-# Setting up `conda`
-We'll be using `conda` as the python environment manager for this summer school. To understand what `conda` is and why we need to use `conda`, we recommend Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
+## Setting up `conda`
+
+[Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) (or its recent cousin, [Mamba](https://mamba.readthedocs.io/en/latest/)) is an environment manager we will be using for this summer school. Using conda has the following benefits:
 - Isolation of dependencies
 - Reproducibility
 - Ease of management
 - Testing and development
 
-## Installing `conda` via Miniforge for local machine
+To know more about `conda` and why we recommend it, visit Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
+- Isolation of dependencies
+- Reproducibility
+- Ease of management
+- Testing and development
 
-JupyterHub comes with conda installed so that users can create virtual environments from the start. However, if your computer does not have conda installed, we suggest installing [Miniforge](https://github.com/conda-forge/miniforge) as a way to get access to [Conda](https://conda.io/), [Mamba](https://github.com/mamba-org/mamba) and Python, with conda-forge as default channel.  
-Once Miniforge is installed, you should be able to use `conda` and `mamba` in your terminal.  
+The OOI JupyterHub requires some initial setup to make `conda` works. This setup **only need to be completed once**.
 
-We recommend installing Miniforge by downloading and running the provided installer for your OS from [https://conda-forge.org/download/](https://conda-forge.org/download/)  
+The steps can be completed by running the `init_conda.sh` script:
+- In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
+- Run the initialization script
+  ```bash
+  bash init_conda.sh
+  ```
 
-**Mac & Linux**: Download the installer and open your computer's terminal to run the command:
-```
-bash Miniforge3-$(uname)-$(uname -m).sh
-```
-You may need to `cd ...` into the folder that contains your downloaded file first.
-
-Follow the installer and type `yes` if prompted "Do you wish to update your shell profile to automatically initialize conda?" 
-
-**Windows**: Download and run the Windows installer `.exe` file.  
-As you go through the installer, make sure you:
-1) Agree to the License Agreement
-2) Install for "Just Me (recommended)"
-3) Install in the default folder `C:\Users\[ACCOUNT_NAME]\miniforge3`
-4) Check only "Create shortcuts (supported packages only)", "Add Miniforge3 to my PATH environment variable", and "Register Miniforge3 as my default Python 3.12"
-5) Wait for installation and click on Next and Finish.
-
-We recommend using Git Bash for setting up the `conda` environments and downloading the GitHub repositories so please download [Git](https://git-scm.com/downloads) if you don't have Git already. This will give you access to Git Bash which is a terminal that allows the use of `conda`, `git`, and commands like `cd` and `ls`.
-
-The OOI JupyterHub requires some set up so that `conda` works. These steps only need to be completed once.
-
-- Initialize `conda` by running `init_conda.sh` script
-    - In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository. (Assuming that you are already in the repository type `cd scripts` in the terminal)
-    - Run the initialization script
-    ```bash
-    bash init_conda.sh
-    ```
-
-```{admonition} More about the script
+```{admonition} What's in the script?
 :class: dropdown
 This bash script does the following:
 - Initializes bash by running the .bashrc file
@@ -109,60 +91,58 @@ This bash script does the following:
 - Configure .condarc so it remembers and saves custom user environments
 ```
 
-## Create a `conda` virtual environment
+## Create a `conda` environment
 
-For testing OOI data access setup, we will be creating a `conda` virtual environment to be able to run a notebook that will load data from the [OOI Gold Copy THREDDS
-catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html).
+Now we will create a `conda` environment to run a test notebook that will load data from the [OOI Gold Copy THREDDS
+catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html). By creating an environment with specific packages, we make sure that we have all the required packages to run the example notebook, and that all the specified packages can work with each other (i.e., no dependency conflicts).
 
-In the JupyterHub terminal, create the `conda` virtual environment by first navigating to the `environment.yml` file in the summer school repository and running the `create` command.
-```bash
-cd ~/2025-Summer-School-Acoustics/NoteBooks/day01_ooi_data_access
-conda env create -f environment.yml
-```
-This will take some time. Type `y` and hit `ENTER` when prompted if you want to install any packages.
+In the JupyterHub terminal:
+- Navigate to the `environment.yml` file in the summer school repository and run the following command. This will take some time. Type `y` and hit `ENTER` when prompted if you want to install any packages.
 
-After the environment has been created, `activate` it and register it as a Jupyter kernel
-```bash
-conda activate ooi
-python -m ipykernel install --user --name=ooi
-```
+  ```bash
+  cd ~/2025-Summer-School-Acoustics/NoteBooks/day01_ooi_data_access
+  conda env create -f environment.yml
+  ```
+- After the environment has been created, `activate` it
+  ```bash
+  conda activate ooi
+  python -m ipykernel install --user --name=ooi
+  ```
+- Register the environment as a Jupyter kernel
+  ```bash
+  conda activate ooi
+  python -m ipykernel install --user --name=ooi
+  ```
 
-# Setting up OOI data access credentials
-
-In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set our access credentials. Once you have your credentials set up on your computer, you do not need to re-run these commands.
-
+## Setting up OOI data access credentials
+In order to access data and/or metadata (e.g., calibration coefficients) collected from the OOI, we need to set up our access credentials. This setup **only need to be completed once**.
 - If you haven't already done so, either create a user account on the [OOI Data Portal](https://ooinet.oceanobservatories.org/) (original OOI website and API server for the OOI M2M system), or use the [CILogon](https://cilogon.org/) button with an academic or Google account (login button is towards the upper right corner of the web page) to login to the portal.
 - After you login, the “Log In” text will change to your username.
 - Click on your username and then on the “User Profile” element of the drop down.
 - Copy and save the following values from the user profile: `API Username` and `API Token`.
 
-Users need to create a .netrc file in their home directory to store these access credentials. Set up these access credentials by running the `setup_ooi_creds.sh` script.
-- In the JupyterHub terminal, navigate to the `scripts/` directory in the cloned summer school repository
+We will next create a `.netrc` file in our home directory to store these access credentials. Set up these access credentials by running the `setup_ooi_creds.sh` script.
+
+In the JupyterHub terminal:
+- Navigate to the `scripts/` directory in the cloned summer school repository
 - Edit the `setup_ooi_creds.sh` script to replace `API_Username` and `API_Token` with your copied values from above. The `nano` command will help you edit
-```bash
-nano setup_ooi_creds.sh
-```
+  ```bash
+  nano setup_ooi_creds.sh
+  ```
 - Run the OOI access credentials setup script
-```bash
-bash setup_ooi_creds.sh
-```
+  ```bash
+  bash setup_ooi_creds.sh
+  ```
 
-# Running the test notebook
+Now we can run the provided example notebook within the `ooi-data-explorations` folder to see if all the packages have been installed properly. On the JupyterHub, use the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
-Now we can run the provided example notebook within the ooi-data-explorations directory to see if all the packages have been installed properly. We are done using the JupyterHub terminal and can now start using the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
-
+When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
 <figure>
 <img src="/imgs/jhub_notebook.png" alt="JupyterHub notebook" width="500"/>
-<figcaption><em>Figure 6. When you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right.</em></figcaption>
+<figcaption><em>When you open a jupyter notebook, you can select the ipython kernel to be the conda environment that we just created. Click `Python 3 (ipykernel)` in the top right.</em></figcaption>
 </figure>
 <br/><br/>
 
-Change the kernel from the default `Python 3 (ipykernel)` to the `ooi` environment we created.
-
 Jupyter notebooks allow users to have cells containing Markdown notes along with cells containing code and code outputs. Each of these can be minimized or expanded. Let's all add our names to the top of the notebook by creating a Markdown cell.
 
-Now, let's run all the cells and see this notebook work. This notebook simply loads and plots data from the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html). The data is stored [here](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument/catalog.html?dataset=ooigoldcopy/public/CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument/deployment0002_CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument_20141010T183039-20150411T233350.nc) which is data from a pH sensor on the Oregon Inshore Surface Mooring (CE01ISSM) midwater platform (aka the Near Surface Instrument Frame, NSIF), deployed at 7 m depth (site depth is 25 m). Furthermore, this is telemetered data from Deployment 2 (October 2014 through April 2015). 
-
-After importing the necessary packages, our notebook will first load and categorize the pH values according to quality based on a subset of QARTOD flags.
-
-The next cell will plot the data from October 2014 through April 2015 and color code the values as red if their QARTOD flags indicated instrument failure.
+This example notebook simply loads and plots data from the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html). The data is stored [here](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument/catalog.html?dataset=ooigoldcopy/public/CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument/deployment0002_CE01ISSM-RID16-06-PHSEND000-telemetered-phsen_abcdef_dcl_instrument_20141010T183039-20150411T233350.nc) which is data from a pH sensor on the Oregon Inshore Surface Mooring (CE01ISSM) midwater platform (aka the Near Surface Instrument Frame, NSIF), deployed at 7 m depth (site depth is 25 m). Furthermore, this is telemetered data from Deployment 2 (October 2014 through April 2015). 
