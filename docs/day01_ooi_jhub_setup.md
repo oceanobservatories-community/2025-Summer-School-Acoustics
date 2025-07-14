@@ -1,7 +1,7 @@
 # Setting up the JupyterHub environment
 
 ## Log on the OOI JupyterHub
-Access to the NSF OOI JupyterHub is available to researchers and students looking to interact with OOI data. [JupyterHub]((https://jupyterhub.readthedocs.io/en/latest/)) creates encapsulated [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) environments unique to each user.
+Access to the NSF OOI JupyterHub is available to researchers and students looking to interact with OOI data. [JupyterHub](https://jupyterhub.readthedocs.io/en/latest/) creates encapsulated [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) environments unique to each user.
 
 The JupyterHub is set up to provide users with the option of using the following programming languages:
 - [Python](https://www.python.org/)
@@ -11,7 +11,7 @@ The JupyterHub is set up to provide users with the option of using the following
 
 Users can explore and analyze OOI data using a high-performance computing cluster co-located with the data (both the [raw](https://rawdata.oceanobservatories.org/files/) and processed [netCDF](https://www.unidata.ucar.edu/software/netcdf/) files, which are also accessible via the [OOI Gold Copy THREDDS catalog](https://thredds.dataexplorer.oceanobservatories.org/thredds/catalog/ooigoldcopy/public/catalog.html)).
 
-You can login to the OOI JupyterHub at https://jupyter.oceanobservatories.org using [CILogon](https://cilogon.org/) with your email account and the appropriate identity provider (use the drop-down menu to select your institution, and Log In). You will need to login using your home organization’s credential system.
+You can login to the OOI JupyterHub at [https://jupyter.oceanobservatories.org](https://jupyter.oceanobservatories.org) using [CILogon](https://cilogon.org/) with your email account and the appropriate identity provider (use the drop-down menu to select your institution, and Log In). You will need to login using your home organization’s credential system.
 
 The next step is to choose the server size and type. Choose "Large" for the summer school:
 
@@ -39,7 +39,7 @@ First, go to the summer school [repository](https://github.com/oceanobservatorie
 :align: center
 ```
 
-Then open the JupyterHub terminal and run the commands below to 1) download the GitHub repository and 2) navigate into the downloaded repository. 
+Then open the JupyterHub terminal and run the commands below to clone the GitHub repository. 
 ```bash
 git clone https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics.git
 ```
@@ -55,11 +55,7 @@ You should now see a folder called `2025-Summer-School-Acoustics.git` in your na
 - Ease of management
 - Testing and development
 
-To know more about `conda` and why we recommend it, visit Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F) which dives into the following benefits:
-- Isolation of dependencies
-- Reproducibility
-- Ease of management
-- Testing and development
+To know more about `conda` and why we recommend it, visit Anaconda's [documentation](https://www.anaconda.com/docs/tools/working-with-conda/environments#why-should-i-create-a-new-environment%3F).
 
 The OOI JupyterHub requires some initial setup to make `conda` works. This setup **only need to be completed once**.
 
@@ -125,7 +121,7 @@ In the JupyterHub terminal:
 
 Now we can run the provided example notebook within the `ooi-data-explorations` folder to see if all the packages have been installed properly. On the JupyterHub, use the navigation window on the left to find and open the `day01_phsen_data_access.ipynb` notebook.
 
-When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi` environment we just created.
+When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi_acoustics` environment we just created.
 ```{image} ./img/jhub_notebook.png
 :width: 500px
 :align: center
