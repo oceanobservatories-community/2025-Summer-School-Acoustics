@@ -3,7 +3,9 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
+  - beautifulsoup4
   - echopype
+  - h5netcdf4
   - ipykernel
   - matplotlib
   - pip
