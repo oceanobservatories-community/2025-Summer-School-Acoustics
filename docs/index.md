@@ -5,10 +5,6 @@
 ![OOI Summer School Banner](../imgs/summer_school_logo.png)
 
 
-```{warning}
-👷 This repo is under construction. Come back soon!
-```
-
 ```{include} ../readme.md
 :start-after: <!-- SPHINX-START -->
 ```
