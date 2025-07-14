@@ -123,7 +123,7 @@ Now we can run the provided example notebook within the `ooi-data-explorations` 
 
 When you open a jupyter notebook, on the top right you can select the ipython kernel to be the conda environment that we just created. Click on `Python 3 (ipykernel)` and change it to the `ooi_acoustics` environment we just created.
 ```{image} ./img/jhub_notebook.png
-:width: 500px
+:width: 800px
 :align: center
 ```
 <br/><br/>
