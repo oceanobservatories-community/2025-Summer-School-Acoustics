@@ -21,3 +21,4 @@ dependencies:
     - -e . # Install 2025-Summer-School-Acoustics as python package in 'editable mode'
     - xrsignal
     - ooipy
+    - json
