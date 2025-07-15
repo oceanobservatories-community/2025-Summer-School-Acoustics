@@ -1,0 +1,23 @@
+name: ooi_acoustics
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - echopype
+  - ipykernel
+  - matplotlib
+  - pip
+  - python=3.12
+  - s3fs
+  # -- viz related --
+  - datashader
+  - jupyter_bokeh
+  - holoviews
+  - hvplot
+  - seaborn
+  # -- others --
+  - pip:
+    - das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025
+    - -e . # Install 2025-Summer-School-Acoustics as python package in 'editable mode'
+    - xrsignal
+    - ooipy

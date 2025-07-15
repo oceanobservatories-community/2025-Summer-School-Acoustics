@@ -7,22 +7,6 @@ import warnings
 import pandas as pd
 import numpy as np
 
-def open_lf_hydrophones():
-    """
-    open low frequency hydrophone zarr dataset. By default, this dataset does not have a time coord.
-    
-    Returns
-    -------
-    ds : xr.Dataset
-        xarray dataset of the hydrophone time-series data
-    """
-
-    # temporary dataset path, until data is uploaded to Jupyter Hub
-    dataset_path = '/Volumes/ODL/ODLdata/ooiHydrophones/LFRawData/ooi_lfhydrophones.zarr'
-
-    ds = xr.open_zarr(dataset_path)
-    return ds
-
 def slice_lf_hydrophones(ds, start_time, end_time, include_coord=True, time_base=pd.Timestamp('2015-01-01')):
     '''
     slice_lf_hydrophones - slices dataset using time slice and assigns coordinates to time dimension
@@ -51,6 +35,18 @@ def slice_lf_hydrophones(ds, start_time, end_time, include_coord=True, time_base
 
     return ds_sliced
 
+def open_lfhydrophones():
+    fn = '/home/jovyan/ooi/rsn_cabled/SummerSchool2025/lowfrequency_hydrophone_data/ooi_lfhydrophones.zarr'
+    lf_hydrophones = xr.open_zarr(fn)
+    return lf_hydrophones
+
+
+def open_lfspectrograms():
+    fn = '/home/jovyan/ooi/rsn_cabled/SummerSchool2025/lowfrequency_hydrophone_data/1hr_20150101_20230101_16192pt_HPcorrected.zarr'
+    specs = xr.open_zarr(fn)
+    return specs
+
+    
 def __int_idx(start_date, end_date, time_base=pd.Timestamp('2015-01-01')):
     '''
     int_idx - get integer indices for zarr store given date bounds

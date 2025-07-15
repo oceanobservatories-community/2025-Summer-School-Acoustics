@@ -5,3 +5,5 @@ docs/*.rst
 .ipynb_checkpoints/
 *.nc
 mean_aggregation.png
+NoteBooks/day_2_ambient_sound_exploration_key.ipynb
+*.h5
