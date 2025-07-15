@@ -5,3 +5,4 @@ docs/*.rst
 .ipynb_checkpoints/
 *.nc
 mean_aggregation.png
+*.h5
