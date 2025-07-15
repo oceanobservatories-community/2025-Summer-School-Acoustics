@@ -5,7 +5,7 @@ channels:
 dependencies:
   - beautifulsoup4
   - echopype
-  - h5netcdf4
+  - h5netcdf
   - ipykernel
   - matplotlib
   - pip
