@@ -16,6 +16,10 @@ dependencies:
   - jupyter_bokeh
   - holoviews
   - hvplot
+  - seaborn
   # -- others --
   - pip:
     - das4whales@git+https://github.com/DAS4Whales/DAS4Whales@ooi-2025
+    - -e . # Install 2025-Summer-School-Acoustics as python package in 'editable mode'
+    - xrsignal
+    - ooipy
