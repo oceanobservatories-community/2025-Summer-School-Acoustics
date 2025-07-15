@@ -35,6 +35,18 @@ def slice_lf_hydrophones(ds, start_time, end_time, include_coord=True, time_base
 
     return ds_sliced
 
+def open_lfhydrophones():
+    fn = '/home/jovyan/ooi/rsn_cabled/SummerSchool2025/lowfrequency_hydrophone_data/ooi_lfhydrophones.zarr'
+    lf_hydrophones = xr.open_zarr(fn)
+    return lf_hydrophones
+
+
+def open_lfspectrograms():
+    fn = '/home/jovyan/ooi/rsn_cabled/SummerSchool2025/lowfrequency_hydrophone_data/1hr_20150101_20230101_16192pt_HPcorrected.zarr'
+    specs = xr.open_zarr(fn)
+    return specs
+
+    
 def __int_idx(start_date, end_date, time_base=pd.Timestamp('2015-01-01')):
     '''
     int_idx - get integer indices for zarr store given date bounds
