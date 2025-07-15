@@ -1,0 +1,24 @@
+name: ooi_acoustics_day3
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - echopype
+  - python=3.12
+  - xarray
+  - dask
+  - netCDF4
+  - bottleneck
+  - zarr
+  - ipykernel
+  - matplotlib
+  - pip
+  - h5netcdf
+
+  # -- viz related --
+  - datashader
+  - jupyter_bokeh
+  - holoviews
+  - hvplot
+  - seaborn
+  - graphviz
