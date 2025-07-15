@@ -5,9 +5,6 @@
 
 [![Documentation Status](https://readthedocs.org/projects/ooi-2025-summer-school-acoustics/badge/?version=latest)](https://ooi-2025-summer-school-acoustics.readthedocs.io/en/latest/?badge=latest)
 
-> [!WARNING]
-> 👷 This repo is under construction. Come back soon!
-
 The full documentation can be found [here](https://ooi-2025-summer-school-acoustics.readthedocs.io/en/latest/)
 
 <!-- SPHINX-START -->

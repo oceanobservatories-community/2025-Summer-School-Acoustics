@@ -5,10 +5,6 @@
 ![OOI Summer School Banner](../imgs/summer_school_logo.png)
 
 
-```{warning}
-👷 This repo is under construction. Come back soon!
-```
-
 ```{include} ../readme.md
 :start-after: <!-- SPHINX-START -->
 ```
@@ -17,6 +13,12 @@
 :class: note
 We've provided a guide for setting up the Jupyter Hub environment and installing all the dependencies that you'll need. See {doc}`getting_started`
 ```
+## Curriculum
+
+The agenda for the summer school can be found [here](https://docs.google.com/document/d/1Be6sk57svMl0TdsAXNLmgmegXWCvO56QLUQe9n24Xyk/edit?usp=sharing).
+
+All ipython notebooks used in the school can be found in the [NoteBooks](https://github.com/oceanobservatories-community/2025-Summer-School-Acoustics/tree/main/NoteBooks) directory of the repository.
+
 
 ## Resources
 Reading material for the summer school and helpful resources for coding
@@ -42,7 +44,7 @@ Slides and Reading material will be on the [google drive](https://drive.google.c
 :maxdepth: 2
 
 self
-getting_started
+jhub_setup
 curriculum
 ```
 

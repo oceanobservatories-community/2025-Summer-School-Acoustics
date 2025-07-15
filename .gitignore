@@ -6,3 +6,4 @@ docs/*.rst
 *.nc
 mean_aggregation.png
 NoteBooks/day_2_ambient_sound_exploration_key.ipynb
+*.h5

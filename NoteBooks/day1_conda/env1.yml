@@ -1,0 +1,9 @@
+name: env1
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - ipykernel
+  - matplotlib
+  - numpy
+  - python=3.12
