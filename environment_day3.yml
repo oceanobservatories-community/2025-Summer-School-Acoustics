@@ -22,4 +22,5 @@ dependencies:
   - holoviews
   - hvplot
   - seaborn
-  - graphviz
+  - pip:
+    - graphviz
